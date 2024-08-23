@@ -50,3 +50,9 @@ button {
     background-color: var(--gray-500);
   }
 }
+@media (width >= 80em) {
+  form {
+    padding-top: 2.25rem;
+    padding-bottom: 4rem;
+  }
+}

@@ -1,0 +1,102 @@
+.cuts-remaining {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  & header {
+    & h2 {
+      font-size: var(--fs-base);
+      font-weight: var(--fw-base);
+      & span {
+        font-size: var(--fs-md);
+        font-weight: var(--fw-bold);
+      }
+    }
+    & .status {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    & .progress {
+      width: 11.375rem;
+      height: 0.5rem;
+      background-color: var(--bg-color);
+      position: relative;
+      border-radius: 0.5rem;
+      & .progress-bar {
+        height: 0.5rem;
+        border-radius: 0.5rem;
+        color: #ffffff;
+        position: absolute;
+        height: 100%;
+        background-image: linear-gradient(
+          90deg,
+          #2daa6e 0%,
+          #2daaaa 33.33%,
+          #856ccf 66.67%,
+          #d658b3 100%
+        );
+      }
+      & .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+    }
+    & .count {
+      font-size: var(--fs-2xs);
+    }
+  }
+
+  & .present {
+    position: relative;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 3.5rem;
+      height: 3.5rem;
+      background-color: var(--bg-color);
+      border-radius: 50%;
+      top: -0.1875rem;
+    }
+    & img {
+      position: absolute;
+      width: 2.5rem;
+      top: 0.1875rem;
+    }
+  }
+}
+@media (width >= 80em) {
+  .cuts-remaining {
+    padding: 2rem;
+    & header{
+      & .progress {
+        width: 21.9375rem;
+    }
+    & .present {
+      position: relative;
+      width: 4.5rem;
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: var(--bg-color);
+        border-radius: 50%;
+      }
+      & img {
+        position: absolute;
+        width: 4rem;
+        top: 0;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 .appointment-history {
+  margin-bottom: 1rem;
   & .appointment-history__title {
     display: flex;
     justify-content: space-between;
@@ -45,9 +46,11 @@
 }
 @media (width >= 80em) {
   .appointment-history {
+    max-height: 360px;
+    margin-bottom: initial;
     & ul {
-      overflow: scroll;
-      max-height: 360px;
+      overflow-y: scroll;
+      max-height: 291px;
     }
   }
 }

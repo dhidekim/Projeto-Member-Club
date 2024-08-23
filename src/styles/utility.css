@@ -31,7 +31,6 @@
     grid-template-areas:
       "client loyalty"
       "appointment loyalty"
-      "appointment loyalty"
       "appointment cuts";
   }
   .client {
