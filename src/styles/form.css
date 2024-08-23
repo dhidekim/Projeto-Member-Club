@@ -46,8 +46,12 @@ button {
   span {
     display: none;
   }
+  &:hover {
+    background-color: var(--gray-600);
+  }
   &:disabled {
-    background-color: var(--gray-500);
+    background-color: #332b3199;
+    cursor: not-allowed;
   }
 }
 @media (width >= 80em) {
