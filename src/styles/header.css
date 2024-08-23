@@ -1,18 +1,18 @@
-header {
+header.top {
   text-align: center;
   padding-top: var(--py-2lg);
   & img {
-    width: 6.214375rem; /*99.43*/
-    height: 3rem; /*48*/
+    width: 6.214375rem;
+    height: 3rem;
   }
 }
 
 @media (width >= 80em) {
-  header {
+  header.top {
     padding: var(--py-2xl) 0 1.25rem;
-  }
-  header img {
-    width: 7.25rem; /*99.43*/
-    height: 3.5rem; /*99.43*/
+    & img {
+      width: 7.25rem;
+      height: 3.5rem;
+    }
   }
 }
