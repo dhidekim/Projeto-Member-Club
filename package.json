@@ -3,7 +3,8 @@
   "description": "Aplicação WEB para gerenciar o Cartão de Fidelidade do Member Club para um Salão de Beleza.",
   "author": "Douglas Hideki Matsudo",
   "scripts": {
-    "server": "json-server --watch db.json --port 3333"
+    "server": "json-server --watch db.json --port 3333",
+    "build": "webpack"
   },
   "devDependencies": {
     "webpack": "^5.89.0",
