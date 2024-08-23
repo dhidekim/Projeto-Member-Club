@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --gray-700: #332b31;
+  --gray-600: #4a4448;
+  --gray-500: #756c71;
+  --gray-400: #d3cfd2;
+  --gray-300: #dfdcdf;
+  --gray-200: #e9e7e9;
+  --gray-100: #f4f1f2;
+  --white: #ffffff;
+
+  --bg-color: var(--gray-200);
+  --bg-card: var(--gray-100);
+  --bg-cardId: var(--gray-300);
+  --bg-form: var(--gray-300);
+  --bg-base-progress: var(--gray-300);
+  --bg-form-button: var(--gray-700);
+
+  --stroke-color: var(--gray-300);
+  --stroke-form-color: var(--gray-400);
+
+  --text-color-primary: var(--gray-600);
+  --text-color-secondary: var(--gray-500);
+
+  --brand-color-primary: #d658b3;
+  --brand-color-secondary: #45b442;
+
+  --gradient-base: linear-gradient(
+    90deg,
+    #2daa6e 0%,
+    #2daaaa 33.33%,
+    #856ccf 66.67%,
+    #d658b3 100%
+  );
+
+  --ff-sans: "Oxygen", sans-serif;
+  --fw-base: 300;
+  --fw-md: 400;
+  --fw-bold: 700;
+
+  --fs-md: 1.5rem; /* 24px */
+  --fs-sm: 1.125rem; /* 18px */
+  --fs-base: 1rem; /* 16px */
+  --fs-xs: 0.875rem; /* 14px */
+  --fs-2xs: 0.75rem; /* 12px */
+
+  --py-base: 1rem; /* 16px */
+  --py-lg: 1.5rem; /* 24px */
+  --py-2lg: 2rem; /* 32px */
+  --py-xl: 2.25rem; /* 36px */
+  --py-2xl: 4rem; /* 64px */
+
+  --px-base: 1rem; /* 16px */
+  --px-lg: 1.5rem; /* 24px */
+  --px-2lg: 2rem; /* 32px */
+  --px-xl: 2.25rem; /* 36px */
+  --px-2xl: 4rem; /* 64px */
+}
+
+html {
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-base);
+  font-size: var(--fs-2xs);
+  line-height: 1.4;
+  color: var(--text-color-secondary);
+  scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+  color: var(--text-color-primary);
+  font-weight: var(--fw-bold);
+}
+
+h1 {
+  font-size: var(--fs-sm);
+}
+
+h2 {
+  font-size: var(--fs-2xs);
+}
