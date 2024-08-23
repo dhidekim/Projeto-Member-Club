@@ -1,6 +1,6 @@
 header {
   text-align: center;
-  padding: var(--py-2lg) 0 var(--py-base);
+  padding-top: var(--py-2lg);
   & img {
     width: 6.214375rem; /*99.43*/
     height: 3rem; /*48*/
@@ -9,8 +9,7 @@ header {
 
 @media (width >= 80em) {
   header {
-    background-color: rgb(238, 197, 197);
-    padding: var(--py-2xl) 0 var(--py-xl);
+    padding: var(--py-2xl) 0 1.25rem;
   }
   header img {
     width: 7.25rem; /*99.43*/
