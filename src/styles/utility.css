@@ -8,8 +8,27 @@
   margin-inline: auto;
 }
 
+.border-radius {
+  background-color: var(--bg-card);
+  border: 1px solid var(--stroke-color);
+  border-radius: 1rem;
+}
+
 @media (width >= 80em) {
   .container {
     --max-width: 80rem;
+  }
+
+  .board-client {
+    display: flex;
+    gap: 24px;
+
+    aside {
+      min-width: 320px;
+      flex: 1;
+    }
+    main {
+      flex: auto;
+    }
   }
 }

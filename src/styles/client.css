@@ -1,0 +1,42 @@
+.client {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+
+  & p {
+    font-size: var(--fs-2xs);
+  }
+
+  & .client--picture {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      background: linear-gradient(
+        300deg,
+        #2daa6e 0%,
+        #2daaaa 33.33%,
+        #856ccf 66.67%,
+        #d658b3 100%
+      );
+      position: absolute;
+      inset: 0;
+      border-radius: 10px;
+      z-index: 0;
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    & img {
+      position: relative;
+      top: 1px;
+      left: 1px;
+      width: 3.375rem;
+      height: 3.375rem;
+      border-radius: 10px;
+      border: 1px var(--white) solid;
+      background-color: var(--white);
+    }
+  }
+}
