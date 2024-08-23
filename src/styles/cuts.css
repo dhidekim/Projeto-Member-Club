@@ -76,26 +76,27 @@
 @media (width >= 80em) {
   .cuts-remaining {
     padding: 2rem;
-    & header{
+    & header {
       & .progress {
         width: 21.9375rem;
-    }
-    & .present {
-      position: relative;
-      width: 4.5rem;
-      &::before {
-        position: absolute;
-        content: "";
-        display: block;
-        width: 4.5rem;
-        height: 4.5rem;
-        background-color: var(--bg-color);
-        border-radius: 50%;
       }
-      & img {
-        position: absolute;
-        width: 4rem;
-        top: 0;
+      & .present {
+        position: relative;
+        width: 4.5rem;
+        &::before {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 4.5rem;
+          height: 4.5rem;
+          background-color: var(--bg-color);
+          border-radius: 50%;
+        }
+        & img {
+          position: absolute;
+          width: 4rem;
+          top: 0;
+        }
       }
     }
   }
