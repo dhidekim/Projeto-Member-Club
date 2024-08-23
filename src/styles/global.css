@@ -95,3 +95,7 @@ h1 {
 h2 {
   font-size: var(--fs-2xs);
 }
+
+ul[role="list"] {
+  list-style: none;
+}

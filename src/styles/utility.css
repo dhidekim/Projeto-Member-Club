@@ -14,21 +14,37 @@
   border-radius: 1rem;
 }
 
+.board-client {
+  display: grid;
+  gap: 0.5rem;
+}
+
 @media (width >= 80em) {
   .container {
     --max-width: 80rem;
   }
-
   .board-client {
-    display: flex;
-    gap: 24px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 320px auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "client loyalty"
+      "appointment loyalty"
+      "appointment loyalty"
+      "appointment cuts";
+  }
+  .client {
+    grid-area: client;
+  }
+  .loyalty-card {
+    grid-area: loyalty;
+  }
+  .appointment-history {
+    grid-area: appointment;
+  }
 
-    aside {
-      min-width: 320px;
-      flex: 1;
-    }
-    main {
-      flex: auto;
-    }
+  .cuts-remaining {
+    grid-area: cuts;
   }
 }
