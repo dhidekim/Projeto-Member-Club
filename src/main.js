@@ -15,3 +15,6 @@ import "./libs/dayjs.js";
 
 import dayjs from "dayjs";
 console.log(dayjs().format("HH:mm"));
+
+// JS
+import "./modules/form/submit.js";
