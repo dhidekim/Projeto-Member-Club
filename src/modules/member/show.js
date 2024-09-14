@@ -3,6 +3,7 @@ export function memberShow({ dataMember }) {
     console.log(dataMember);
     const client = dataMember[0];
 
+    const modal = document.getElementById("myModal");
     const dataClient = document.querySelector("#data-client");
     const dataPhoto = document.querySelector("#data-photo");
     const clientId = document.querySelector("#client-id");
@@ -22,6 +23,8 @@ export function memberShow({ dataMember }) {
 
     const clientCutsNeeded = client.loyaltyCard.cutsNeeded;
     const clientTotalCuts = client.loyaltyCard.totalCuts;
+
+    const present = document.querySelector(".present img");
 
     // Limpa
     dataClient.innerHTML = "";
@@ -75,9 +78,19 @@ export function memberShow({ dataMember }) {
         item.innerHTML = "<span>Ok</span>";
       } else if (i == clientCutsNeeded - 1) {
         item.classList.add("free");
-        item.innerHTML = "<span>Ganhou</span>";
+        item.classList.add("shake");
+        item.innerHTML = "<span>Grátis</span>";
       } else {
         item.innerHTML = "<span>Vazio</span>";
+      }
+
+      if (clientCutsNeeded == clientTotalCuts) {
+        //Abre o modal
+        modal.style.display = "block";
+        present.addEventListener("click", () => {
+          modal.style.display = "block";
+        });
+        present.classList.add("shake");
       }
 
       loyaltyCardList.appendChild(item);

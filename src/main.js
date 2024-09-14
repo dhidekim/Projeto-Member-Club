@@ -9,6 +9,8 @@ import "./styles/client.css";
 import "./styles/history.css";
 import "./styles/loyalty.css";
 import "./styles/cuts.css";
+import "./styles/modal.css";
+import "./styles/animation.css";
 
 // Configuração do dayjs
 import "./libs/dayjs.js";
@@ -18,3 +20,4 @@ console.log(dayjs().format("HH:mm"));
 
 // JS
 import "./modules/form/submit.js";
+import "./modules/modal/modal.js";
