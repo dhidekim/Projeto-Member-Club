@@ -4,12 +4,15 @@ const form = document.querySelector("form");
 const cardNumber = document.getElementById("cardNumber");
 
 // Manipulando o input amount para receber card válido.
-cardNumber.addEventListener("input", () => {
-  cardNumber.value = cardNumber.value.replace(/\D/g, "");
-  cardNumber.value = cardNumber.value.replace(
-    /(\d{3})(\d{3})(\d{3})(\d{3})/,
-    "$1-$2-$3-$4"
-  );
+cardNumber.addEventListener("input", (e) => {
+  // Remove caracteres não numéricos
+  let value = e.target.value.replace(/\D/g, "");
+
+  //Aplicação de máscara
+  value = value.replace(/(\d{3})(\d)/, "$1-$2");
+  value = value.replace(/(\d{3})(\d)/, "$1-$2");
+  value = value.replace(/(\d{3})(\d)/, "$1-$2");
+  e.target.value = value;
 });
 
 form.onsubmit = async (event) => {
