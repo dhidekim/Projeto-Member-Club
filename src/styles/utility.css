@@ -32,6 +32,8 @@
       "client loyalty"
       "appointment loyalty"
       "appointment cuts";
+
+    padding-bottom: var(--py-2xl);
   }
   .client {
     grid-area: client;

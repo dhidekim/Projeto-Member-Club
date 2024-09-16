@@ -99,3 +99,7 @@ h2 {
 ul[role="list"] {
   list-style: none;
 }
+
+.hide {
+  display: none !important;
+}
