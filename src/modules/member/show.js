@@ -1,3 +1,5 @@
+import { openModal } from "../modal/modal";
+
 export function memberShow({ dataMember }) {
   try {
     console.log(dataMember);
@@ -89,10 +91,11 @@ export function memberShow({ dataMember }) {
         if (clientCutsNeeded == clientTotalCuts) {
           //Abre o modal
           modal.style.display = "block";
-          present.addEventListener("click", () => {
-            modal.style.display = "block";
-          });
+          present.addEventListener("click", openModal);
           present.classList.add("shake");
+        } else {
+          present.removeEventListener("click", openModal, false);
+          present.classList.remove("shake");
         }
 
         loyaltyCardList.appendChild(item);

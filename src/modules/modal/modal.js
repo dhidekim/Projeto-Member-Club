@@ -19,3 +19,7 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+export function openModal() {
+  modal.style.display = "block";
+}
